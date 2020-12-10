@@ -1,0 +1,49 @@
+/* all */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #eee;
+}
+
+/* main画面 */
+.item {
+  padding: 1rem;
+  background: #cc66ff;
+  width: 120px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px gray;
+}
+
+
+/* createitem画面 */
+#create-item {
+  /* display: none; */
+  position: absolute;
+  top: 25vh;
+  left: 25vh;
+  width: 50vw;
+  height: 50vh;
+  /* ちょっとずれているのでおいおいどうにかしようず */
+  /* transform: ; */
+  background: #888;
+  margin: auto;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.close-btn {
+  float: right;
+}
+
+.done {
+  border: 1px solid #000;
+}
+
+/* update画面 */

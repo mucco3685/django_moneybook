@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/common.css">
+  <title>メイン画面</title>
+</head>
+
+<body>
+  <header>
+    <h1>お小遣いアプリ(仮)</h1>
+    <div id="get-date">{today}</div>
+    <ul>
+      <li><span>{給料日}</span>まで</li>
+      <li>あと<span id="dead-line">{}</span>日</li>
+    </ul>
+
+  </header>
+
+  <main>
+    <section id="sec1">
+      <!-- ★★★実装★★★ -->
+      <!-- 通常表示画面 -->
+      <div id="main-content">
+        <!-- addbtnで追加された項目はここに格納される -->
+        <!-- 1.divタグ作成 -->
+        <!-- 2.divタグ内に<input type="button">を作成 -->
+        <!-- divタグにはidを自動でふる　連番になるように -->
+        <!-- ex. id="item-1" class='item'name='item' -->
+        <!-- itemは配列に格納するので、添え字＋1を当てる -->
+        <div id="item-1" class="item" name="item">
+          <p>食費</p>
+          <p>あと{}円</p>
+        </div>
+
+      </div>
+      <div id="add-content">
+        <!-- addbtn:btnを押したら画面が現れます→id=sec2 -->
+        <input type="button" id="add-btn" value="add">
+      </div>
+
+    </section>
+
+    <section id="sec2">
+      <!-- ★★★実装★★★ -->
+      <!-- 要素追加画面 -->
+      <!-- display:none;をボタンで切り替え:toggleの実装 -->
+      <div id="create-item">
+        <span class="close-btn" name="close-btn">&#x2612;</span>
+        <ul>
+          <li><input type="text" placeholder="item" class="regi-item"></li>
+          <li><input type="text" placeholder="price" class="regi-item"></li>
+        </ul>
+        <span class="done" name="done">&#x2611;追加</span>
+      </div>
+
+
+
+      <!-- 課題:priceが数値ではなかったときは？？？ -->
+    </section>
+
+    <section id="sec3">
+      <!-- ★★★今回は見送ります -->
+      <!-- 登録済み画面のupdate -->
+      <!-- display:none;をボタンで切り替え:toggleの実装 -->
+
+
+    </section>
+  </main>
+
+
+  <footer>
+    <small>&copy;2020</small>
+  </footer>
+
+  <script src="js/header.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
